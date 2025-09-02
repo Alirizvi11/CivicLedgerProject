@@ -14,11 +14,11 @@
 
 | 💳 Wallet Overview | 📝 Tagged Transactions |
 |--------------------|------------------------|
-| ![Wallet](assets/screenshots/wallet.png) | ![Transactions](assets/screenshots/transactions.png) |
+| ![Wallet](assets/screenshots/wallet1.png) | ![Transactions](assets/screenshots/transactions1.png) |
 
 | 📊 Spending by Tag | ⚙️ Settings Panel |
 |--------------------|------------------|
-| ![Chart](assets/screenshots/chart.png) | ![Settings](assets/screenshots/settings.png) |
+| ![Chart](assets/screenshots/chart1.png) | ![Settings](assets/screenshots/settings1.png) |
 
 ---
 
