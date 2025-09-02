@@ -1,0 +1,57 @@
+/* ✅ Button Variants */
+.btn {
+  @apply px-4 py-2 rounded text-white font-semibold transition duration-200;
+}
+
+.btn-primary {
+  @apply btn bg-blue-600 hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply btn bg-gray-600 hover:bg-gray-700;
+}
+
+.btn-danger {
+  @apply btn bg-red-600 hover:bg-red-700;
+}
+
+/* ✅ Badge Styles */
+.badge {
+  @apply inline-block px-3 py-1 rounded-full text-xs font-bold;
+}
+
+.badge-success {
+  @apply badge bg-green-100 text-green-700;
+}
+
+.badge-warning {
+  @apply badge bg-yellow-100 text-yellow-700;
+}
+
+.badge-error {
+  @apply badge bg-red-100 text-red-700;
+}
+
+/* ✅ Card Layout */
+.card {
+  @apply bg-white border rounded-lg shadow p-4 mb-4;
+}
+
+/* ✅ Page Layout */
+.page {
+  @apply p-6 max-w-4xl mx-auto;
+}
+
+/* ✅ Section Headings */
+.section-title {
+  @apply text-2xl font-bold mb-4 text-gray-800;
+}
+
+/* ✅ Proposal Status */
+.proposal-active {
+  @apply text-green-600 font-semibold;
+}
+
+.proposal-closed {
+  @apply text-red-600 font-semibold;
+}

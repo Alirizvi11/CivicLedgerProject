@@ -1,0 +1,24 @@
+[package]
+name = "civicledger"
+version = "1.0.0"
+authors = []
+
+
+[addresses]
+civicledger = "0xd6516e5440520ebea764c6ea3d085ff7d7a276244c0caf5d68ff9b10034a041e"
+
+
+
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
+
+[profiles.newprofile]
+private_key = "ed25519-priv-0xc699cfca838a901dff7b2f3ea62407cda8e5e0891476b76606236d4067d4e091"
+address = "0xd6516e5440520ebea764c6ea3d085ff7d7a276244c0caf5d68ff9b10034a041e"

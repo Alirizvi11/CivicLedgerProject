@@ -1,0 +1,2 @@
+import{a as i}from"./chunk-EBMEXURY.mjs";import{b as e}from"./chunk-STY74NUA.mjs";var r=class extends i{async verifySignatureAsync(t){return this.verifySignature(t)}toUint8Array(){return this.bcsToBytes()}toString(){let t=this.toUint8Array();return e.fromHexInput(t).toString()}},n=class extends r{};export{r as a,n as b};
+//# sourceMappingURL=chunk-WSR5EBJM.mjs.map

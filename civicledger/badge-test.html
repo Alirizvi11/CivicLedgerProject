@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Badge Test</title>
+  <script src="https://unpkg.com/@aptos-labs/aptos-wallet-adapter-core/dist/index.global.js"></script>
+  <script src="https://unpkg.com/@aptos-labs/aptos-wallet-adapter-petra/dist/index.global.js"></script>
+</head>
+<body>
+  <h1>🧪 Badge Claim Test</h1>
+  <button id="connectBtn">🔗 Connect Petra</button>
+  <p id="walletAddress">Wallet: Not connected</p>
+  <button id="badgeBtn">🎖️ Claim Badge</button>
+
+  <script>
+    const MODULE_ADDRESS = "0xd8a5db309addc49542f3d35182e013c5582162a9f23ed312395d7be0b2e1ca0f";
+    let currentAccount = null;
+
+    document.getElementById("connectBtn").addEventListener("click", async () => {
+      const res = await window.aptos.connect();
+      currentAccount = res.address;
+      document.getElementById("walletAddress").textContent = `✅ Connected: ${currentAccount}`;
+    });
+
+document.getElementById("badgeBtn").addEventListener("click", async () => {
+  if (!currentAccount) return alert("Connect wallet first!");
+
+  const payload = {
+    type: "entry_function_payload",
+    function: "0xd8a5db309addc49542f3d35182e013c5582162a9f23ed312395d7be0b2e1ca0f::badge::claim_badge", // ✅ Fully hardcoded
+    arguments: [],
+    type_arguments: []
+  };
+
+  console.log("🔍 Final function path:", payload.function); // ✅ Confirm in console
+
+  try {
+    const tx = await window.aptos.signAndSubmitTransaction({ payload }); // ✅ Correct syntax
+    alert(`Badge claimed! TX hash: ${tx.hash}`);
+  } catch (err) {
+    console.error("❌ Badge claim failed:", err);
+    alert("Badge claim failed: " + err.message);
+  }
+});
+
+  </script>
+</body>
+</html>

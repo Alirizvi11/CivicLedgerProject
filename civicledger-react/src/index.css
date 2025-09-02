@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Example custom styles */
+.btn {
+  @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200;
+}
+
+.page {
+  @apply p-6 max-w-4xl mx-auto;
+}
+
+.card {
+  @apply bg-white border rounded-lg shadow p-4 mb-4;
+}
